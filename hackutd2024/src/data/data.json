@@ -1,0 +1,90 @@
+[
+    {
+        "id": 0,
+        "name": "used bike",
+        "img": "https://c02.purpledshub.com/uploads/sites/39/2023/05/Trek-Emonda-AL5-02-2406262.jpg?w=1029&webp=1",
+        "interested": 10,
+        "status": "AVAILABLE",
+        "date": 10
+    },
+    {
+        "id": 1,
+        "name": "big chair",
+        "img": "https://i.etsystatic.com/8521604/r/il/d186b2/3176465445/il_570xN.3176465445_m1nd.jpg",
+        "interested": 3,
+        "status": "AVAILABLE",
+        "date": 2
+    },
+    {
+        "id": 2,
+        "name": "bottle",
+        "img": "https://preview.redd.it/old-water-bottle-may-have-been-put-in-dishwasher-but-is-not-v0-hyu4xdxtbf6d1.jpg?width=1080&crop=smart&auto=webp&s=43d3dc63f67d616863a0100a600e5bc2443ca0ee",
+        "interested": 1,
+        "status": "AVAILABLE",
+        "date": 4
+    },
+    {
+        "id": 3,
+        "name": "mirror",
+        "img": "https://i.redd.it/2jm5j2o4bm581.jpg",
+        "interested": 9,
+        "status": "AVAILABLE",
+        "date": 2
+    },
+    {
+        "id": 4,
+        "name": "used toothpaste",
+        "img": "https://images.urbndata.com/is/image/UrbanOutfitters/81475295_066_b?$xlarge$&fit=constrain&qlt=80&wid=640",
+        "interested": 14,
+        "status": "AVAILABLE",
+        "date": 3
+    },
+    {
+        "id": 5,
+        "name": "Air Jordan 4",
+        "img": "https://preview.redd.it/where-can-i-find-obviously-fake-jordans-v0-kpr14jkzgu7c1.jpg?width=1080&crop=smart&auto=webp&s=122fc7ceb68092bed29488ac3b8e3a3f4cee4fc2",
+        "interested": 1,
+        "status": "AVAILABLE",
+        "date": 6
+    },
+    {
+        "id": 6,
+        "name": "laptop",
+        "img": "https://media.wired.com/photos/65ea34d70264b0ad869cbc18/master/w_2560%2Cc_limit/MacBook-Air-M3-Review-Featured-Gear.jpg",
+        "interested": 24,
+        "status": "AVAILABLE",
+        "date": 7
+    },
+    {
+        "id": 7,
+        "name": "funko pops",
+        "img": "https://pugsanddinosaurs.com/wp-content/uploads/2018/09/37063963_621729544875198_4277897373683810304_n.jpg?w=620",
+        "interested": 10,
+        "status": "AVAILABLE",
+        "date": 12
+    },
+    {
+        "id": 8,
+        "name": "squishmallows",
+        "img": "https://i.ebayimg.com/images/g/JIMAAOSwW4hijW1B/s-l400.jpg",
+        "interested": 13,
+        "status": "AVAILABLE",
+        "date": 8
+    },
+    {
+        "id": 9,
+        "name": "used tv",
+        "img": "https://i.ebayimg.com/images/g/10AAAOSwXg5jUP3o/s-l1200.jpg",
+        "interested": 3,
+        "status": "AVAILABLE",
+        "date": 2
+    },
+    {
+        "id": 10,
+        "name": "flower pot",
+        "img": "https://images.ctfassets.net/zma7thmmcinb/2lzpVMjBgHDnDAn9f2jUeY/76ebf459449753eec675ded2561df967/Spring-tabletop-planter.jpg",
+        "interested": 1,
+        "status": "AVAILABLE",
+        "date": 1
+    }
+]
