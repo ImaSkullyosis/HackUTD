@@ -6,23 +6,31 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgb(222, 41, 41);
 }
 
 .wrapper {
-  background-color: #cbc1ae;
-  margin: 30px 30px 30px 30px;
+  background-color: #f59a87;
+  margin: 100px 30px 30px 30px;
   border-radius: 30px;
   height: 500px;
-  box-shadow: 3px 3px #bdb29d;
+  box-shadow: 3px 3px #000000;
   border-style: hidden;
 }
 
 h1 {
   margin-top: 35px;
   padding-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(24, 17, 17);
+  font-size: 35px;
+}
+
+h2 {
+  margin-top: 35px;
+  padding-top: 20px;
   margin-bottom: 30px;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 35px;
 }
 
@@ -30,17 +38,17 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 50px;
 }
 
 .child {
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   color: black;
   font-size: 15px;
-  padding: 15px;
+  padding: 20px;
 
   border-radius: 10px;
-  margin: 10px;
+  margin: 20px 10px 10px;
   max-width: fit-content;
   max-height: fit-content;
 
@@ -51,10 +59,10 @@ h1 {
 
 button {
   border-style: hidden;
-  background-color: #cbc1ae;
+  background-color: #f59a87;
   color: black;
   font-size: 20px;
-  padding-top: 100px;
+  padding-top: 50px;
 
   font-weight: 700;
   cursor: pointer;
