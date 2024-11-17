@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./landingpage.css";
 import { useNavigate } from "react-router-dom";
 
 function land() {

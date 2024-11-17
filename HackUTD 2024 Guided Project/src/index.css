@@ -97,3 +97,9 @@ button:hover {
   color: white;
   font-weight: bold;
 }
+
+.wrapperadvice h1 {
+  color: rgb(80, 0, 0);
+  padding-top: 0px;
+  margin-top: 0px;
+}

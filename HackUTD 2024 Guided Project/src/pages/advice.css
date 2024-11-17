@@ -1,16 +1,27 @@
-.wrapper {
-    background-color: #ffffff;
-    margin: 100px 30px 30px 30px;
-    border-radius: 30px;
-    height: fit-content;
-    padding: 3vh;
-    box-shadow: 3px 3px #000000;
-    border-style: hidden;
-  }
+.wrapperadvice {
+  background-color: #ffffff;
+  margin: 100px 30px 30px 30px;
+  border-radius: 30px;
+  height: fit-content;
+  padding: 3vh;
+  box-shadow: 3px 3px #000000;
+  border-style: hidden;
+}
 
-  h1 {
-    margin-top: 4vh;
-    padding-top: 20px;
-    color: whitesmoke;
-    font-size: 35px;
-  }
+.wrapperadvice h1 {
+  color: rgb(80, 0, 0);
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 1.5rem;
+  padding-bottom: 3vh;
+}
+
+h4 {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.wrapperadvice h5 {
+  text-align: left;
+  transform: translateX(2vw);
+}
