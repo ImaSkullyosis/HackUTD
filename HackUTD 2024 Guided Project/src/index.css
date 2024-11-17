@@ -57,18 +57,6 @@ h2 {
   flex-wrap: wrap;
 }
 
-{/*
-button {
-  border-style: hidden;
-  background-color: rgb(222, 41, 41);
-  color: black;
-  font-size: 20px;
-  padding-top: 100px;
-
-  font-weight: 700;
-  cursor: pointer;
-}
-*/}
 
 button {
   border-style: hidden;
