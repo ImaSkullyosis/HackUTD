@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./landingpage.css";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +18,21 @@ function land() {
     "Lack of Perks",
   ];
 
+  const [selected, setSelected] = useState([]);
+
   let navigate = useNavigate();
+
+  const modify = (item) => {
+    setSelected((prevList) => {
+      if (prevList.includes(item)) {
+        // Remove the string if it exists
+        return prevList.filter((str) => str !== item);
+      } else {
+        // Add the string if it doesn't exist
+        return [...prevList, item];
+      }
+    });
+  };
 
   return (
     <>
@@ -30,7 +45,7 @@ function land() {
         <h2>Select Your Concerns</h2>
         <div className="concernWrap">
           {possibleConcerns.map((issue, index) => (
-            <h5 className="child" key={index}>
+            <h5 className="child" key={index} onClick={() => modify(issue)}>
               {issue}
             </h5>
           ))}
@@ -38,7 +53,10 @@ function land() {
 
 
 
-        <button className="submitIssues" onClick={() => navigate("/advice")}>
+        <button
+          className="submitIssues"
+          onClick={() => navigate("/advice", { state: selected })}
+        >
           Get Ideas
         </button>
       </div>
