@@ -8,7 +8,8 @@ function FindLowEffort({ arr }) {
   if (match) {
     return (
       <>
-        <div>
+      <div className="wrapper">
+      <div>
           For Smart Appliances, Home Security, or Home Surveillance consider
           checking out the following :{" "}
         </div>
@@ -34,6 +35,8 @@ function FindLowEffort({ arr }) {
           the network. Too many devices connected simultaneously can slow down
           the connection.
         </div>
+      </div>
+
       </>
     );
   }
@@ -46,7 +49,8 @@ function FindCar({ arr }) {
   if (match) {
     return (
       <>
-        <div>For Connected Vehicles consider the following: </div>
+      <div className="wrapper">
+      <div>For Connected Vehicles consider the following: </div>
         <div>
           Check for Manufacturer Issues: Contact the vehicle manufacturer or
           check their support website for any known connectivity issues or
@@ -56,6 +60,8 @@ function FindCar({ arr }) {
           Seek Professional Help: Visit your dealership for a professional
           diagnosis if the problem persists.
         </div>
+      </div>
+
       </>
     );
   }
@@ -72,7 +78,8 @@ function FindHighEffort({ arr }) {
   if (match) {
     return (
       <>
-        <div>For heavy applications consider the following: </div>
+      <div className="wrapper">
+      <div>For heavy applications consider the following: </div>
         <div>
           Run Troubleshooting Tools: Most routers have a diagnostic tool
           accessible via their admin panel.
@@ -85,6 +92,8 @@ function FindHighEffort({ arr }) {
           Inspect Hardware: Ensure all cables (power, Ethernet, etc.) are
           securely connected and undamaged.
         </div>
+      </div>
+
       </>
     );
   }
@@ -97,16 +106,20 @@ function FindLiveCalls({ arr }) {
   if (match) {
     return (
       <>
-        <div>For Live Video Calls consider the following: </div>
+      <div className="wrapper">
+      <div>For Live Video Calls consider the following: </div>
         <div>
           Software update: Ensure your video call app, device firmware, and
           operating system are up to date for optimal performance and
           compatibility.
         </div>
+      </div>
+
       </>
     );
   }
 }
+
 
 function FindConnectivityConcerns({ arr }) {
   const loweffort = ["Internet Speed", "Device Count", "Security", "Lack of Perks"];
@@ -115,7 +128,8 @@ function FindConnectivityConcerns({ arr }) {
   if (match) {
     return (
       <>
-        <div>For concerns related to Internet Speed, Device Count, Security, or Lack of Perks, consider the following:</div>
+      <div className="wrapper">
+      <div>For concerns related to Internet Speed, Device Count, Security, or Lack of Perks, consider the following:</div>
         <div>
           <strong>Internet Speed:</strong> 
           <ul>
@@ -126,8 +140,9 @@ function FindConnectivityConcerns({ arr }) {
         <div>
           <strong>Device Count:</strong> 
           <ul>
-            <li>Check how many devices are connected to your network. Disconnect unused devices to free up bandwidth.</li>
-            <li>Upgrade to a router that supports more simultaneous connections if your device count is high.</li>
+            <li>Check how many devices are connected to your network. If you have more than 25 devices, disconnect unused devices to free up network bandwidth.</li>
+            <li>Upgrade to the latest generation WiFi Router or consider adding more extenders. 
+              Specific Product Reccomendations: Whole-Home Wi-Fi  </li>
           </ul>
         </div>
         <div>
@@ -144,10 +159,14 @@ function FindConnectivityConcerns({ arr }) {
             <li>Consider switching to a provider that includes perks like free equipment upgrades or discounts on other services.</li>
           </ul>
         </div>
+      </div>
+
       </>
     );
   }
 }
+
+
 
 
 

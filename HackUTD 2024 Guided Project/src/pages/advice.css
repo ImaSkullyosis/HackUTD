@@ -1,0 +1,16 @@
+.wrapper {
+    background-color: #ffffff;
+    margin: 100px 30px 30px 30px;
+    border-radius: 30px;
+    height: fit-content;
+    padding: 3vh;
+    box-shadow: 3px 3px #000000;
+    border-style: hidden;
+  }
+
+  h1 {
+    margin-top: 4vh;
+    padding-top: 20px;
+    color: whitesmoke;
+    font-size: 35px;
+  }

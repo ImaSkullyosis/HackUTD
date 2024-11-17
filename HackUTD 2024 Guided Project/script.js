@@ -6,4 +6,3 @@ document.querySelectorAll('.child').forEach((child) => {
       child.classList.add('selected');
     });
   });
-  
