@@ -37,7 +37,6 @@ function FindLowEffort({ arr }) {
       </>
     );
   }
-  return null;
 }
 
 function FindCar({ arr }) {
@@ -45,19 +44,21 @@ function FindCar({ arr }) {
   const modi = Object.values(arr);
   const match = modi.some((element) => loweffort.includes(element));
   if (match) {
-    <>
-      <div>For Connected Vehicles consider the following: </div>
-      <div>
-        Check for Manufacturer Issues: Contact the vehicle manufacturer or check
-        their support website for any known connectivity issues or recalls.
-      </div>
-      <div>
-        Seek Professional Help: Visit your dealership for a professional
-        diagnosis if the problem persists.
-      </div>
-    </>;
+    return (
+      <>
+        <div>For Connected Vehicles consider the following: </div>
+        <div>
+          Check for Manufacturer Issues: Contact the vehicle manufacturer or
+          check their support website for any known connectivity issues or
+          recalls.
+        </div>
+        <div>
+          Seek Professional Help: Visit your dealership for a professional
+          diagnosis if the problem persists.
+        </div>
+      </>
+    );
   }
-  return null;
 }
 
 function FindHighEffort({ arr }) {
@@ -69,23 +70,24 @@ function FindHighEffort({ arr }) {
   const modi = Object.values(arr);
   const match = modi.some((element) => loweffort.includes(element));
   if (match) {
-    <>
-      <div>For heavy applications consider the following: </div>
-      <div>
-        Run Troubleshooting Tools: Most routers have a diagnostic tool
-        accessible via their admin panel.
-      </div>
-      <div>
-        Update Firmware: Log into your router's admin interface and check for
-        firmware updates.
-      </div>
-      <div>
-        Inspect Hardware: Ensure all cables (power, Ethernet, etc.) are securely
-        connected and undamaged.
-      </div>
-    </>;
+    return (
+      <>
+        <div>For heavy applications consider the following: </div>
+        <div>
+          Run Troubleshooting Tools: Most routers have a diagnostic tool
+          accessible via their admin panel.
+        </div>
+        <div>
+          Update Firmware: Log into your router's admin interface and check for
+          firmware updates.
+        </div>
+        <div>
+          Inspect Hardware: Ensure all cables (power, Ethernet, etc.) are
+          securely connected and undamaged.
+        </div>
+      </>
+    );
   }
-  return null;
 }
 
 function FindLiveCalls({ arr }) {
@@ -93,16 +95,17 @@ function FindLiveCalls({ arr }) {
   const modi = Object.values(arr);
   const match = modi.some((element) => loweffort.includes(element));
   if (match) {
-    <>
-      <div>For {element} consider the following: </div>
-      <div>
-        Software update: Ensure your video call app, device firmware, and
-        operating system are up to date for optimal performance and
-        compatibility.
-      </div>
-    </>;
+    return (
+      <>
+        <div>For Live Video Calls consider the following: </div>
+        <div>
+          Software update: Ensure your video call app, device firmware, and
+          operating system are up to date for optimal performance and
+          compatibility.
+        </div>
+      </>
+    );
   }
-  return null;
 }
 
 function test() {
