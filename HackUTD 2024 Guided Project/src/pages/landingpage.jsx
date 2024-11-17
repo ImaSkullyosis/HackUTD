@@ -1,6 +1,6 @@
 import "./landingpage.css";
 import { useNavigate } from "react-router-dom";
-
+import Advice from "./advice.jsx";
 function land() {
   const possibleConcerns = [
     "Smart Appliances",
@@ -28,10 +28,7 @@ function land() {
             <div key={index}>{issue}</div>
           ))}
         </div>
-        <button
-          className="submitIssues"
-          onClick={() => navigate("/advice.jsx")}
-        >
+        <button className="submitIssues" onClick={() => navigate("/advice")}>
           Get Ideas
         </button>
       </div>
