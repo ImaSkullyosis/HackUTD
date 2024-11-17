@@ -36,22 +36,24 @@ function land() {
 
   return (
     <>
-    <h1 className = "poppins-bold text-3x1 text-red-400 "> filler name for our website</h1>
-
+      <h1 className="poppins-bold text-3x1 text-red-400 ">
+        {" "}
+        filler name for our website
+      </h1>
 
       <div className="wrapper">
-
-        
         <h2>Select Your Concerns</h2>
         <div className="concernWrap">
           {possibleConcerns.map((issue, index) => (
-            <h5 className="child" key={index} onClick={() => modify(issue)}>
+            <h5
+              className={`child ${selected.includes(issue) ? "selected" : ""}`}
+              key={index}
+              onClick={() => modify(issue)}
+            >
               {issue}
             </h5>
           ))}
         </div>
-
-
 
         <button
           className="submitIssues"
