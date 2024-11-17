@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(90, 19, 19);
+  background-color: rgb(127, 29, 29);
 }
 
 .wrapper {
@@ -96,10 +96,4 @@ button:hover {
   background-color: #921818;
   color: white;
   font-weight: bold;
-}
-
-.wrapperadvice h1 {
-  color: rgb(80, 0, 0);
-  padding-top: 0px;
-  margin-top: 0px;
 }

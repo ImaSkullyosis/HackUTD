@@ -25,3 +25,61 @@ h4 {
   text-align: left;
   transform: translateX(2vw);
 }
+a {
+  font-size: 1.4rem;
+  color: rgb(80, 0, 0);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Fade-in animation for the div */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Slide-in animation for the text */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0; /* Start fully transparent */
+    transform: translateX(-50%); /* Start off-screen to the left */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* End in the original position */
+  }
+}
+
+@keyframes slideInFromLeftH5 {
+  from {
+    opacity: 0; /* Start fully transparent */
+    transform: translateX(-50%); /* Start off-screen to the left */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateX(2vw); /* End in the original position */
+  }
+}
+
+/* Fade-in effect for the wrapper div */
+.wrapperadvice {
+  animation: fadeIn 1s ease-in; /* 2 seconds duration */
+  opacity: 1; /* Ensure visibility after animation */
+}
+
+/* Slide-in effect for h1, h4, h5 */
+h1,
+h4,
+p {
+  animation: slideInFromLeft 2s ease-out; /* 2 seconds duration */
+  opacity: 1; /* Ensure visibility after animation */
+}
+
+h5 {
+  animation: slideInFromLeftH5 2s ease-out;
+  opacity: 1;
+}

@@ -185,6 +185,31 @@ function FindConnectivityConcerns({ arr }) {
   }
 }
 
+function Promotion() {
+  return (
+    <>
+      <div className="wrapperadvice">
+        <h1>Easy Personalized Solution To Your Problem</h1>
+        <h4>Wifi Extender by Frontier:</h4>
+        <h5>
+          Wi-Fi extenders are an effective solution for addressing common
+          internet problems such as weak or spotty signals in certain areas of a
+          home or office. By amplifying and rebroadcasting your existing Wi-Fi
+          signal, extenders help eliminate dead zones and ensure consistent
+          connectivity throughout larger spaces. They are easy to install and
+          cost-effective compared to more complex networking solutions like mesh
+          systems. Additionally, extenders can improve the performance of smart
+          devices, gaming consoles, and streaming services by providing a
+          stronger and more reliable signal where it's needed most. This makes
+          them an accessible and practical choice for enhancing overall internet
+          performance.
+        </h5>
+      </div>
+      ;
+    </>
+  );
+}
+
 function test() {
   const location = useLocation();
   const selected = location.state;
@@ -204,6 +229,7 @@ function test() {
         <FindHighEffort arr={selected} />
         <FindLiveCalls arr={selected} />
         <FindConnectivityConcerns arr={selected} />
+        <Promotion />
       </div>
     </>
   );
