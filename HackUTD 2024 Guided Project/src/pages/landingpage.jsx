@@ -38,7 +38,7 @@ function land() {
     <>
       <h1 className="poppins-bold text-3x1 text-red-400 ">
         {" "}
-        filler name for our website
+        Fix your issues in a few clicks
       </h1>
 
       <div className="wrapper">
