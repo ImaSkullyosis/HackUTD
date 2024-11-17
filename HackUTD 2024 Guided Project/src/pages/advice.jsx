@@ -108,6 +108,49 @@ function FindLiveCalls({ arr }) {
   }
 }
 
+function FindConnectivityConcerns({ arr }) {
+  const loweffort = ["Internet Speed", "Device Count", "Security", "Lack of Perks"];
+  const modi = Object.values(arr);
+  const match = modi.some((element) => loweffort.includes(element));
+  if (match) {
+    return (
+      <>
+        <div>For concerns related to Internet Speed, Device Count, Security, or Lack of Perks, consider the following:</div>
+        <div>
+          <strong>Internet Speed:</strong> 
+          <ul>
+            <li>Test your speed using an online speed test tool to confirm your current internet performance.</li>
+            <li>Consider upgrading your plan if your current speed doesn't meet your needs, especially with multiple users or devices.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Device Count:</strong> 
+          <ul>
+            <li>Check how many devices are connected to your network. Disconnect unused devices to free up bandwidth.</li>
+            <li>Upgrade to a router that supports more simultaneous connections if your device count is high.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Security:</strong> 
+          <ul>
+            <li>Ensure your Wi-Fi network is secured with WPA3 or WPA2 encryption.</li>
+            <li>Change your router's default admin password to prevent unauthorized access.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Lack of Perks:</strong> 
+          <ul>
+            <li>Explore value-added services offered by your provider, such as enhanced security, parental controls, or streaming bundles.</li>
+            <li>Consider switching to a provider that includes perks like free equipment upgrades or discounts on other services.</li>
+          </ul>
+        </div>
+      </>
+    );
+  }
+}
+
+
+
 function test() {
   const location = useLocation();
   const selected = location.state;
@@ -126,6 +169,7 @@ function test() {
         <FindCar arr={selected} />
         <FindHighEffort arr={selected} />
         <FindLiveCalls arr={selected} />
+        <FindConnectivityConcerns arr={selected} />
       </div>
     </>
   );
