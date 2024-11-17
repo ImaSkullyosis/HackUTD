@@ -41,13 +41,13 @@ function land() {
         <h2>Select Your Concerns</h2>
         <div className="concernWrap">
           {possibleConcerns.map((issue, index) => (
-            <h5
+            <h6
               className={`child ${selected.includes(issue) ? "selected" : ""}`}
               key={index}
               onClick={() => modify(issue)}
             >
               {issue}
-            </h5>
+            </h6>
           ))}
         </div>
 
