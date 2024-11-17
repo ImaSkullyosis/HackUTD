@@ -10,7 +10,7 @@ function land() {
     "Smart Appliances",
     "Live Video Calls",
     "Home Security",
-    "Home Survailance",
+    "Home Surveillance",
     "Connected Vehicles",
     "Streaming High Quality Video",
     "Online Gaming",
