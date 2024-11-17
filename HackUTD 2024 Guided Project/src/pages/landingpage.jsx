@@ -23,9 +23,11 @@ function land() {
     <>
       <div className="wrapper">
         <h1 color="white">Select Your Concerns</h1>
-        <div>
+        <div className="concernWrap">
           {possibleConcerns.map((issue, index) => (
-            <div key={index}>{issue}</div>
+            <h5 className="child" key={index}>
+              {issue}
+            </h5>
           ))}
         </div>
         <button className="submitIssues" onClick={() => navigate("/advice")}>
