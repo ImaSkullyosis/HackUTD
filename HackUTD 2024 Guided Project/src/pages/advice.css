@@ -1,6 +1,6 @@
 .wrapperadvice {
   background-color: #ffffff;
-  margin: 100px 30px 30px 30px;
+  margin: 30px 12% 30px 12%;
   border-radius: 30px;
   height: fit-content;
   padding: 3vh;
@@ -11,14 +11,25 @@
 .wrapperadvice h1 {
   color: rgb(80, 0, 0);
   padding-top: 0px;
-  margin-top: 0px;
-  font-size: 1.5rem;
+  margin-top: 10px;
+  font-size: 1.6rem;
   padding-bottom: 3vh;
 }
 
 h4 {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+h5 {
+  font-size: 1.08rem;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  margin-left: 10px;
+  line-height: 1.7rem;
 }
 
 .wrapperadvice h5 {
@@ -46,7 +57,7 @@ a {
 @keyframes slideInFromLeft {
   from {
     opacity: 0; /* Start fully transparent */
-    transform: translateX(-50%); /* Start off-screen to the left */
+    transform: translateX(-200px); /* Start off-screen to the left */
   }
   to {
     opacity: 1; /* Fully visible */
@@ -57,11 +68,11 @@ a {
 @keyframes slideInFromLeftH5 {
   from {
     opacity: 0; /* Start fully transparent */
-    transform: translateX(-50%); /* Start off-screen to the left */
+    transform: translateX(-200px); /* Start off-screen to the left */
   }
   to {
     opacity: 1; /* Fully visible */
-    transform: translateX(2vw); /* End in the original position */
+    transform: translateX(0); /* End in the original position */
   }
 }
 
@@ -75,11 +86,11 @@ a {
 h1,
 h4,
 p {
-  animation: slideInFromLeft 2s ease-out; /* 2 seconds duration */
+  animation: slideInFromLeft 1s ease-out; /* 2 seconds duration */
   opacity: 1; /* Ensure visibility after animation */
 }
 
 h5 {
-  animation: slideInFromLeftH5 2s ease-out;
+  animation: slideInFromLeftH5 1s ease-out;
   opacity: 1;
 }

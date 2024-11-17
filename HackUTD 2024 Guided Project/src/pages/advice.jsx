@@ -10,15 +10,15 @@ function FindLowEffort({ arr }) {
       <>
         <div className="wrapperadvice">
           <h1>
-            For Smart Appliances, Home Security, or Home Surveillance consider
-            checking out the following :
+            For issues with Smart Appliances, Home Security, or Home Surveillance, consider
+            the following approaches:
           </h1>
 
           <h4>Signal Strength:</h4>
           <h5>
             Ensure the appliance is within a reasonable range of your router.
             Signal strength diminishes with distance or physical
-            obstructions.Avoid placing the router near other electronics or
+            obstructions. Avoid placing the router near other electronics or
             appliances that can interfere with Wi-Fi signals, such as
             microwaves.
           </h5>
@@ -87,7 +87,7 @@ function FindHighEffort({ arr }) {
     return (
       <>
         <div className="wrapperadvice">
-          <h1>For heavy applications consider the following: </h1>
+          <h1>For heavy application use, consider the following: </h1>
           <h4>Run Troubleshooting Tools:</h4>
           <h5>
             Most routers have a diagnostic tool accessible via their admin
