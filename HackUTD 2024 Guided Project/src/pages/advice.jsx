@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import "./advice.css";
+import { useNavigate } from "react-router-dom";
 
 function FindLowEffort({ arr }) {
   const loweffort = ["Smart Appliances", "Home Security", "Home Surveillance"];
@@ -10,17 +11,16 @@ function FindLowEffort({ arr }) {
       <>
         <div className="wrapperadvice">
           <h1>
-            For issues with Smart Appliances, Home Security, or Home Surveillance, consider
-            the following approaches:
+            For issues with Smart Appliances, Home Security, or Home
+            Surveillance, consider the following approaches:
           </h1>
 
           <h4>Signal Strength:</h4>
           <h5>
             Ensure the appliance is within a reasonable range of your router.
-            Signal strength diminishes with distance or physical
-            obstructions. Avoid placing the router near other electronics or
-            appliances that can interfere with Wi-Fi signals, such as
-            microwaves.
+            Signal strength diminishes with distance or physical obstructions.
+            Avoid placing the router near other electronics or appliances that
+            can interfere with Wi-Fi signals, such as microwaves.
           </h5>
 
           <h4>Restart Your Router and Devices:</h4>
@@ -221,6 +221,8 @@ function test() {
     "Lack of Perks",
   ];
 
+  let navigate = useNavigate();
+
   return (
     <>
       <div className="adviceWrapper">
@@ -230,6 +232,7 @@ function test() {
         <FindLiveCalls arr={selected} />
         <FindConnectivityConcerns arr={selected} />
         <Promotion />
+        <button onClick={() => navigate("/")}>Return</button>
       </div>
     </>
   );
