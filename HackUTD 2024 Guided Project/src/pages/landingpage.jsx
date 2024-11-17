@@ -36,10 +36,7 @@ function land() {
 
   return (
     <>
-      <h1 className="poppins-bold text-3x1 text-red-400 ">
-        {" "}
-        Fix your issues in a few clicks
-      </h1>
+      <h1>Fix your issues in a few clicks</h1>
 
       <div className="wrapper">
         <h2>Select Your Concerns</h2>
