@@ -6,11 +6,11 @@
 }
 
 body {
-  background-color: rgb(222, 41, 41);
+  background-color: rgb(221, 215, 215);
 }
 
 .wrapper {
-  background-color: #f59a87;
+  background-color: #ffffff;
   margin: 100px 30px 30px 30px;
   border-radius: 30px;
   height: 500px;
@@ -22,7 +22,7 @@ h1 {
   margin-top: 35px;
   padding-top: 20px;
   margin-bottom: 20px;
-  color: rgb(24, 17, 17);
+  color: #222222;
   font-size: 35px;
 }
 
@@ -30,7 +30,7 @@ h2 {
   margin-top: 35px;
   padding-top: 20px;
   margin-bottom: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(80, 0, 0);
   font-size: 35px;
 }
 
@@ -42,8 +42,8 @@ h2 {
 }
 
 .child {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: rgb(222, 41, 41);
+  color: rgb(255, 255, 255);
   font-size: 15px;
   padding: 20px;
 
@@ -57,13 +57,23 @@ h2 {
   flex-wrap: wrap;
 }
 
+
 button {
   border-style: hidden;
-  background-color: #f59a87;
-  color: black;
+  background-color: rgb(222, 41, 41); /* Primary red for buttons */
+  color: white; /* White text for contrast */
   font-size: 20px;
-  padding-top: 50px;
-
+  padding: 10px 20px; /* Adjust padding for balance */
+  margin-top: 10px; /* Move buttons slightly down */
   font-weight: 700;
   cursor: pointer;
+  border-radius: 5px; /* Rounded corners for a modern look */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for buttons */
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+button:hover {
+  background-color: #b71c1c; /* Darker red on hover for emphasis */
+  color: #ffffff; /* Maintain white text */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
