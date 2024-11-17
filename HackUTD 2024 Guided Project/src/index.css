@@ -20,15 +20,14 @@ body {
 }
 
 h1 {
-  margin-top: 35px;
+  margin-top: 4vh;
   padding-top: 20px;
-  margin-bottom: 20px;
   color: whitesmoke;
   font-size: 35px;
 }
 
 h2 {
-  margin-top: 35px;
+  margin-top: 3vh;
   padding-top: 20px;
   margin-bottom: 30px;
   color: rgb(80, 0, 0);
