@@ -2,6 +2,10 @@ import "./landingpage.css";
 import { useNavigate } from "react-router-dom";
 import Advice from "./advice.jsx";
 function land() {
+  const highlight = () => {
+    alert("Clicked!");
+  };
+
   const possibleConcerns = [
     "Smart Appliances",
     "Live Video Calls",
@@ -30,9 +34,12 @@ function land() {
             </h5>
           ))}
         </div>
-        <button className="submitIssues" onClick={() => navigate("/advice")}>
-          Get Ideas
-        </button>
+        <br></br>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <button className="submitIssues" onClick={() => navigate("/advice")}>
+            Get Ideas
+          </button>
+        </div>
       </div>
     </>
   );
